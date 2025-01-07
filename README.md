@@ -1,2 +1,4 @@
-# Grapple
-Reproduction of the Scout's Grapple from Annihilation
+# Scout-Grapple
+
+### <font color=aqua>**You are the feet!**</font>
+Annihilationのクラス“Scout”のGrappleを再現するデータパックです。
