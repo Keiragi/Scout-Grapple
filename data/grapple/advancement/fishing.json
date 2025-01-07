@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "fishing": {
+      "trigger": "item_durability_changed",
+      "conditions": {
+        "delta": -2,
+        "item": {
+          "items": "grapple:fishing_rod"
+        }
+      }
+    }
+  }
+}

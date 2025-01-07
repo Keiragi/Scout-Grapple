@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "hooked": {
+      "trigger": "impossible"
+    }
+  },
+  "rewards": {
+    "function": "grapple:scout/hooked"
+  }
+}
