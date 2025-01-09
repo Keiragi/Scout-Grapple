@@ -56,6 +56,13 @@
                 "!enchantable": {},
                 "!repairable": {},
                 "max_damage": 999999999,
+                "enchantment_glint_override": false,
+                "enchantments": {
+                  "show_in_tooltip": false,
+                  "levels": {
+                    "lure": 6
+                  }
+                },
                 "attribute_modifiers": {
                   "show_in_tooltip": false,
                   "modifiers": [
