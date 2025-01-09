@@ -1,0 +1,56 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  #",
+    " #X",
+    "# S"
+  ],
+  "key": {
+    "#": [
+      "stick"
+    ],
+    "X": [
+      "string"
+    ],
+    "S": [
+      "iron_ingot"
+    ]
+  },
+  "result": {
+    "id": "fishing_rod",
+    "components": {
+      "item_name": "{\"text\":\"Grapple\",\"color\":\"yellow\"}",
+      "lore": [
+        "{\"text\":\"<\",\"extra\":[{\"text\":\"Right Click\",\"extra\":[{\"text\":\">\",\"color\":\"gray\"}],\"color\":\"aqua\"}],\"color\":\"gray\",\"italic\":false}",
+        "{\"text\":\" Cast your Grappling hook\",\"color\":\"dark_aqua\",\"italic\":false}"
+      ],
+      "custom_data": {
+        "S_Grapple": true
+      },
+      "hide_additional_tooltip": {},
+      "!enchantable": {},
+      "!repairable": {},
+      "max_damage": 999999999,
+      "enchantment_glint_override": false,
+      "enchantments": {
+        "show_in_tooltip": false,
+        "levels": {
+          "lure": 6
+        }
+      },
+      "attribute_modifiers": {
+        "show_in_tooltip": false,
+        "modifiers": [
+          {
+            "type": "safe_fall_distance",
+            "id": "grapple_safe_fall",
+            "amount": 999999999,
+            "operation": "add_value",
+            "slot": "hand"
+          }
+        ]
+      }
+    }
+  }
+}
