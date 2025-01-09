@@ -8,7 +8,7 @@
           "items": "fishing_rod",
           "predicates": {
             "custom_data": {
-              "Grapple": true
+              "S_Grapple": true
             }
           }
         }

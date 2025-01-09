@@ -1,6 +1,6 @@
 {
   "values": [
-    "grapple:load",
+    "s_grapple:load",
     "p_motion:system/load"
   ]
 }

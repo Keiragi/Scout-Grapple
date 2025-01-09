@@ -18,7 +18,7 @@
             {
               "function": "set_custom_data",
               "tag": {
-                "Grapple": true
+                "S_Grapple": true
               }
             },
             {

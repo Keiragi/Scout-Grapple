@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "grapple:bobber/hooked"
+    "function": "s_grapple:bobber/hooked"
   }
 }
