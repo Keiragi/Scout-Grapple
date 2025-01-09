@@ -1,4 +1,3 @@
-title @a actionbar "Reloaded!"
-scoreboard objectives add fishing_rod minecraft.used:minecraft.fishing_rod "釣竿"
-scoreboard objectives add VectorCalculation dummy
-gamerule fallDamage false
+# スコアボードの作成
+  scoreboard objectives add Grapple.Use_Rod minecraft.used:minecraft.fishing_rod
+  scoreboard objectives add Grapple.Dummy dummy

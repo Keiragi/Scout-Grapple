@@ -5,7 +5,12 @@
       "conditions": {
         "delta": -2,
         "item": {
-          "items": "grapple:fishing_rod"
+          "items": "fishing_rod",
+          "predicates": {
+            "custom_data": {
+              "Grapple": true
+            }
+          }
         }
       }
     }

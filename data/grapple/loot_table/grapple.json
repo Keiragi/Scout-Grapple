@@ -1,0 +1,78 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "fishing_rod",
+          "functions": [
+            {
+              "function": "set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Grapple",
+                "color": "yellow"
+              }
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "Grapple": true
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "<",
+                  "extra": [
+                    {
+                      "text": "Right Click",
+                      "extra": [
+                        {
+                          "text": ">",
+                          "color": "gray"
+                        }
+                      ],
+                      "color": "aqua"
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " Cast your Grappling hook",
+                  "color": "dark_aqua",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "hide_additional_tooltip": {},
+                "!enchantable": {},
+                "!repairable": {},
+                "max_damage": 999999999,
+                "attribute_modifiers": {
+                  "show_in_tooltip": false,
+                  "modifiers": [
+                    {
+                      "type": "safe_fall_distance",
+                      "id": "grapple_safe_fall",
+                      "amount": 999999999,
+                      "operation": "add_value",
+                      "slot": "hand"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
