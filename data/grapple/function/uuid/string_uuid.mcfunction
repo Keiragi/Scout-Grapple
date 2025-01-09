@@ -6,7 +6,7 @@
   loot replace entity @e[type=item_display,tag=get_uuid,limit=1] contents loot grapple:resolve
 
 # マクロ用にデータ移行し、Stringsを分割
-  data modify storage grapple: name set from entity @e[type=item_display,tag=get_uuid,limit=1] item.components."minecraft:custom_name"
+  data modify storage grapple: name set from entity @e[type=item_display,tag=get_uuid,distance=..0.01,limit=1] item.components."minecraft:custom_name"
   function grapple:uuid/output with storage grapple:
 
 # 削除

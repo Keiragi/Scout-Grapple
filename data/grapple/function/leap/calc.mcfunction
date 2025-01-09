@@ -24,7 +24,5 @@
   data remove storage grapple: Pos
 
 # アイテムの耐久値復帰
-  execute if items entity @s weapon.mainhand fishing_rod[custom_data~{"Grapple":1b}] \
-  run item modify entity @s weapon.mainhand {"function":"set_components","components":{"damage":0}}
-  execute if items entity @s weapon.offhand fishing_rod[custom_data~{"Grapple":1b}] \
-  run item modify entity @s weapon.offhand {"function":"set_components","components":{"damage":0}}
+  execute if items entity @s weapon.mainhand fishing_rod[custom_data~{"Grapple":1b}] run item modify entity @s weapon.mainhand {"function":"set_components","components":{"damage":0}}
+  execute if items entity @s weapon.offhand fishing_rod[custom_data~{"Grapple":1b}] run item modify entity @s weapon.offhand {"function":"set_components","components":{"damage":0}}
