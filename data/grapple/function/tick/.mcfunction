@@ -1,5 +1,5 @@
 # 浮きを投げたプレイヤーで実行
-  execute as @a[scores={Grapple.Use_Rod=1}] run function grapple:tick/player
+  execute as @a[scores={Grapple.Use_Rod=1}] run function grapple:player/
 
 # マーカーで実行
   execute as @e[type=marker,tag=grapple] at @s run function grapple:tick/marker
