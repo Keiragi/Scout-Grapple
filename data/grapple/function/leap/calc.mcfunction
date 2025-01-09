@@ -1,6 +1,6 @@
 # マーカー、プレイヤーの位置を保存
-  data modify storage grapple: Pos.Marker set from entity @n[type=marker,tag=grapple] Pos
-  data modify storage grapple: Pos.Player set from entity @p Pos
+  data modify storage grapple: Pos.Marker set from entity @e[type=marker,tag=grapple,tag=trigger,limit=1] Pos
+  data modify storage grapple: Pos.Player set from entity @s Pos
 
 # 計算
   execute store result score $x hb.Motion run data get storage grapple: Pos.Marker[0] 1800
