@@ -1,8 +1,8 @@
 # 常に浮きへ移動
-  tp @s @n[type=fishing_bobber,tag=initialized]
+  $tp @s $(target)
 
-  #execute if score @s Grapple.Dummy = @n[type=fishing_bobber,tag=target] Grapple.Dummy \
-at @n[type=fishing_bobber,tag=target] run tp @s ~ ~ ~
-
-# デバッグ用 位置表示
-#execute at @e[type=marker] run particle electric_spark
+# 浮きが無ければ以下が実行
+  $execute if entity $(target) run return fail
+  tag @s add trigger
+  $execute as $(player) at @s run function grapple:leap/
+  kill @s
