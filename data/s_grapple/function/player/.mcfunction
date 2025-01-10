@@ -5,7 +5,7 @@
   execute anchored eyes positioned ^ ^ ^ as @e[type=fishing_bobber,tag=!initialized,limit=1] run function s_grapple:bobber/init
 
 # クリエイティブなら実行
-  execute if entity @s[gamemode=creative] run return run function s_grapple:player/creative
+  execute if entity @s[gamemode=creative] run function s_grapple:player/creative
 
 # 記録のリセット
   scoreboard players reset @a S_Grapple.Use_Rod
