@@ -1,0 +1,170 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "stick",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": {
+                "translate": "item.minecraft.golden_sword"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "item_model": "golden_sword",
+                "attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "attack_damage",
+                      "id": "golden_sword_attack_damage",
+                      "amount": 5,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "attack_speed",
+                      "id": "golden_sword_attack_speed",
+                      "amount": 64,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                },
+                "consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "block"
+                },
+                "unbreakable": {
+                  "show_in_tooltip": false
+                },
+                "max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "wooden_pickaxe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "wooden_axe",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_helmet",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "unbreakable": {
+                  "show_in_tooltip": false
+                }
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_chestplate",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_leggings"
+        }
+      ],
+      "functions": [
+        {
+          "function": "set_components",
+          "components": {
+            "unbreakable": {
+              "show_in_tooltip": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "leather_boots",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
