@@ -69,10 +69,10 @@
                   "show_in_tooltip": false,
                   "modifiers": [
                     {
-                      "type": "safe_fall_distance",
+                      "type": "fall_damage_multiplier",
                       "id": "grapple_safe_fall",
-                      "amount": 999999999,
-                      "operation": "add_value",
+                      "amount": -0.5,
+                      "operation": "add_multiplied_total",
                       "slot": "hand"
                     }
                   ]
