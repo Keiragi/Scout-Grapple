@@ -55,7 +55,9 @@
                 "hide_additional_tooltip": {},
                 "!enchantable": {},
                 "!repairable": {},
-                "max_damage": 999999999,
+                "unbreakable": {
+                  "show_in_tooltip": false
+                },
                 "enchantment_glint_override": false,
                 "enchantments": {
                   "show_in_tooltip": false,
