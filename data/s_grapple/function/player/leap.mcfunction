@@ -20,8 +20,9 @@
   scoreboard players operation $z hb.Motion -= $z S_Grapple.Dummy
   scoreboard players add $y hb.Motion 1000
 
-# 不要なデータの削除
+# データのリセット
   data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Pos
+  tag @s remove s_grapple.hooked
 
 # Motionの実行
   function #p_motion:xyz
