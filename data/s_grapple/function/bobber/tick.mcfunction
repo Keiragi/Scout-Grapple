@@ -1,6 +1,8 @@
-# Grappleでなければ終了
-  execute on origin unless items entity @s weapon.* fishing_rod[custom_data~{"S_Grapple":1b}] \
-  run return run scoreboard players reset @s S_Grapple.Use_Rod
+## 中断処理
+  # Grappleでなければ終了
+    execute on origin unless items entity @s weapon.* fishing_rod[custom_data~{"S_Grapple":1b}] \
+    run return run scoreboard players reset @s S_Grapple.Use_Rod
+
 
 # 浮きが存在している間Dummyを1にセットする\
   → 浮きが無くなれば空になる

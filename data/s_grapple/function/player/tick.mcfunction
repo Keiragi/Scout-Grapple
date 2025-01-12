@@ -1,8 +1,10 @@
-# Dummyが1なら浮きがあるので終了
-  execute if score @s S_Grapple.Dummy matches 1.. run return fail
+## 中断処理
+  # Dummyが1なら浮きがあるので終了
+    execute if score @s S_Grapple.Dummy matches 1.. run return fail
 
-# Grappleを持っていなければ終了
-  execute unless items entity @s weapon.* fishing_rod[custom_data~{"S_Grapple":1b}] run return fail
+  # Grappleを持っていなければ終了
+    execute unless items entity @s weapon.* fishing_rod[custom_data~{"S_Grapple":1b}] run return fail
+
 
 # スコアのリセット
   scoreboard players reset $success S_Grapple.Dummy
@@ -14,8 +16,8 @@
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Pos.x set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Pos.Bobber[0]
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Pos.y set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Pos.Bobber[1]
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Pos.z set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Pos.Bobber[2]
-    function s_grapple:check/positioned with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Pos
+    function s_grapple:player/positioned with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Pos
 
 
 # 実行
-  execute if score $success S_Grapple.Dummy matches 1 run function s_grapple:leap
+  execute if score $success S_Grapple.Dummy matches 1 run function s_grapple:player/leap

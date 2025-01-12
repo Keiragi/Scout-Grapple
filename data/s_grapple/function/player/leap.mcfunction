@@ -17,10 +17,7 @@
   scoreboard players operation $z hb.Motion -= $z S_Grapple.Dummy
   scoreboard players add $y hb.Motion 1000
 
-# 大きすぎる値をバグとして修正
-  execute unless score $y hb.Motion matches -59000..59000 run function s_grapple:check/fix
-
-# データの明示的削除
+# 不要なデータの削除
   data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Pos
 
 # Motionの実行
