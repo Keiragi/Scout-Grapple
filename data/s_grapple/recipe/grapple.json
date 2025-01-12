@@ -31,6 +31,7 @@
       "hide_additional_tooltip": {},
       "!enchantable": {},
       "!repairable": {},
+      "repair_cost": 2147483647,
       "unbreakable": {
         "show_in_tooltip": false
       },
