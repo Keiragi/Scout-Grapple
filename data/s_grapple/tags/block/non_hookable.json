@@ -2,11 +2,8 @@
   "values": [
     "#air",
     "water",
-    "#buttons",
-    "#signs",
     "short_grass",
     "tall_grass",
-    "lever",
     "spore_blossom",
     "vine",
     "#cave_vines",
@@ -36,9 +33,12 @@
     "torch",
     "soul_torch",
     "redstone_torch",
-    "#banners",
+    "#buttons",
+    "lever",
     "tripwire",
     "tripwire_hook",
+    "#banners",
+    "#signs",
     "light",
     "structure_void"
   ]
