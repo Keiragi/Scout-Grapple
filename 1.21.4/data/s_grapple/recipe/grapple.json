@@ -1,0 +1,59 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  #",
+    " #X",
+    "# S"
+  ],
+  "key": {
+    "#": [
+      "stick"
+    ],
+    "X": [
+      "string"
+    ],
+    "S": [
+      "tripwire_hook"
+    ]
+  },
+  "result": {
+    "id": "fishing_rod",
+    "components": {
+      "item_name": "{\"text\":\"Grapple\",\"color\":\"yellow\"}",
+      "lore": [
+        "{\"text\":\"<\",\"extra\":[{\"text\":\"Right Click\",\"extra\":[{\"text\":\">\",\"color\":\"gray\"}],\"color\":\"aqua\"}],\"color\":\"gray\",\"italic\":false}",
+        "{\"text\":\" Cast your Grappling hook\",\"color\":\"dark_aqua\",\"italic\":false}"
+      ],
+      "custom_data": {
+        "S_Grapple": true
+      },
+      "hide_additional_tooltip": {},
+      "!enchantable": {},
+      "!repairable": {},
+      "repair_cost": 2147483647,
+      "unbreakable": {
+        "show_in_tooltip": false
+      },
+      "enchantment_glint_override": false,
+      "enchantments": {
+        "show_in_tooltip": false,
+        "levels": {
+          "lure": 6
+        }
+      },
+      "attribute_modifiers": {
+        "show_in_tooltip": false,
+        "modifiers": [
+          {
+            "type": "fall_damage_multiplier",
+            "id": "grapple_safe_fall",
+            "amount": -0.5,
+            "operation": "add_multiplied_total",
+            "slot": "hand"
+          }
+        ]
+      }
+    }
+  }
+}
