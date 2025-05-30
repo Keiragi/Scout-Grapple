@@ -6,6 +6,7 @@ Annihilationのクラス“Scout”のGrappleを再現するデータパック�
 ## 対応バージョン
 Minecraft Java Edition<br>
 - 1.21.4
+- 1.21.5
 
 ## 導入方法
 右欄の「Releases」からファイルをダウンロードし、展開したものをワールドフォルダの「datapacks」の中に入れてください。<br>
