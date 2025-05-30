@@ -18,32 +18,32 @@
               "function": "set_components",
               "components": {
                 "item_model": "golden_sword",
-                "attribute_modifiers": {
-                  "modifiers": [
-                    {
-                      "type": "attack_damage",
-                      "id": "golden_sword_attack_damage",
-                      "amount": 5,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    },
-                    {
-                      "type": "attack_speed",
-                      "id": "golden_sword_attack_speed",
-                      "amount": 64,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    }
-                  ],
-                  "show_in_tooltip": false
-                },
+                "attribute_modifiers": [
+                  {
+                    "type": "attack_damage",
+                    "id": "golden_sword_attack_damage",
+                    "amount": 5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "attack_speed",
+                    "id": "golden_sword_attack_speed",
+                    "amount": 64,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
                 "consumable": {
                   "consume_seconds": 2147483647,
                   "animation": "block"
                 },
-                "unbreakable": {
-                  "show_in_tooltip": false
+                "tooltip_display": {
+                  "hidden_components": [
+                    "unbreakable"
+                  ]
                 },
+                "unbreakable": {},
                 "max_stack_size": 1
               }
             }
@@ -61,9 +61,12 @@
             {
               "function": "set_components",
               "components": {
-                "unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "tooltip_display": {
+                  "hidden_components": [
+                    "unbreakable"
+                  ]
+                },
+                "unbreakable": {}
               }
             }
           ]
@@ -80,9 +83,12 @@
             {
               "function": "set_components",
               "components": {
-                "unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "tooltip_display": {
+                  "hidden_components": [
+                    "unbreakable"
+                  ]
+                },
+                "unbreakable": {}
               }
             }
           ]
@@ -99,11 +105,13 @@
             {
               "function": "set_components",
               "components": {
-                "unbreakable": {
-                  "show_in_tooltip": false
-                }
-              },
-              "conditions": []
+                "tooltip_display": {
+                  "hidden_components": [
+                    "unbreakable"
+                  ]
+                },
+                "unbreakable": {}
+              }
             }
           ]
         }
@@ -119,9 +127,12 @@
             {
               "function": "set_components",
               "components": {
-                "unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "tooltip_display": {
+                  "hidden_components": [
+                    "unbreakable"
+                  ]
+                },
+                "unbreakable": {}
               }
             }
           ]
@@ -140,9 +151,12 @@
         {
           "function": "set_components",
           "components": {
-            "unbreakable": {
-              "show_in_tooltip": false
-            }
+            "tooltip_display": {
+              "hidden_components": [
+                "unbreakable"
+              ]
+            },
+            "unbreakable": {}
           }
         }
       ]
@@ -157,9 +171,12 @@
             {
               "function": "set_components",
               "components": {
-                "unbreakable": {
-                  "show_in_tooltip": false
-                }
+                "tooltip_display": {
+                  "hidden_components": [
+                    "unbreakable"
+                  ]
+                },
+                "unbreakable": {}
               }
             }
           ]
