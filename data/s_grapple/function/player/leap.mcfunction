@@ -1,8 +1,8 @@
 # 使用不可状態の検知
-  execute if predicate {"condition":"entity_properties","entity":"this","predicate":{"flags":{"is_on_fire":true}}} \
-  run return run title @s actionbar {"text":"炎上中は使用できません","color":"red"}
-  execute if predicate {"condition":"entity_properties","entity":"this","predicate":{"effects":{"slowness":{}}}} \
-  run return run title @s actionbar {"text":"移動速度低下の効果中は使用できません","color":"red"}
+  execute if predicate {condition:entity_properties,entity:this,predicate:{flags:{is_on_fire:true}}} \
+  run return run title @s actionbar {text:"炎上中は使用できません",color:red}
+  execute if predicate {condition:entity_properties,entity:this,predicate:{effects:{slowness:{}}}} \
+  run return run title @s actionbar {text:"移動速度低下の効果中は使用できません",color:red}
 
 # プレイヤーの位置を保存
   function #oh_my_dat:please
