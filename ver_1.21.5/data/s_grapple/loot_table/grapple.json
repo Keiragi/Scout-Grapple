@@ -55,7 +55,7 @@
                 "tooltip_display": {
                   "hidden_components": [
                     "unbreakable",
-                    "enchantable",
+                    "enchantments",
                     "attribute_modifiers"
                   ]
                 },
