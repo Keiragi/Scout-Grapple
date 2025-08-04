@@ -15,6 +15,8 @@
 # 浮きの接地を検知
   execute if data entity @s {OnGround:0b} run function s_grapple:bobber/in_air
   execute if data entity @s {OnGround:1b} run function s_grapple:bobber/on_ground
-  # 接地して1分経つと消えるので検知終了
-    execute if score @s S_Grapple.Dummy matches 1200 on origin \
-    run scoreboard players reset @s S_Grapple.Use_Rod
+
+# 接地して1分経つと消えるので検知終了
+  execute unless score @s S_Grapple.Dummy matches 1200 run return 0
+  execute on origin run scoreboard players reset @s S_Grapple.Use_Rod
+  kill @s
