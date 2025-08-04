@@ -11,7 +11,10 @@
       },
       {
         "directory": "ver_1.21.5",
-        "formats": 71
+        "formats": {
+          "max_inclusive": 81,
+          "min_inclusive": 71
+        }
       }
     ]
   }
